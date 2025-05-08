@@ -1,3 +1,5 @@
+[EN](README.md) | [ZH](README-zh.md)
+
 # 自动查询论文提交状态
 
 ## 概述
@@ -11,10 +13,10 @@
 该工具支持以下系统的论文提交状态跟踪：
 
 1. **ScholarOne Manuscripts**  
-    一个广泛使用的学术期刊投稿和同行评审系统，例如 IEEE Transactions 期刊 (TIP, TPAMI)。
+   一个广泛使用的学术期刊投稿和同行评审系统，例如 IEEE Transactions 期刊 (TIP, TPAMI)。
 
 2. **Editorial Manager (EM)**  
-    一个全面的稿件提交和跟踪系统，例如 Elsevier 期刊和 Springer 期刊 (IJCV)。
+   一个全面的稿件提交和跟踪系统，例如 Elsevier 期刊和 Springer 期刊 (IJCV)。
 
 ## 邮件配置
 
@@ -93,16 +95,18 @@ date;
 使用 `crontab` 调度脚本，请按照以下步骤操作：
 
 1. 打开 crontab 编辑器：
-    ```bash
-    crontab -e
-    ```
+
+   ```bash
+   crontab -e
+   ```
 
 2. 添加以下行以调度脚本（例如，每天凌晨 2 点运行）：
-    ```bash
-    0 2 * * * /bin/bash /{path_to_script}/query_paper_status.sh >> /{path_to_log}/query_status.log 2>&1
-    ```
 
-    将 `/{path_to_script}/` 替换为 `.sh` 脚本的路径，将 `/{path_to_log}/` 替换为日志文件的路径。
+   ```bash
+   0 2 * * * /bin/bash /{path_to_script}/query_paper_status.sh >> /{path_to_log}/query_status.log 2>&1
+   ```
+
+   将 `/{path_to_script}/` 替换为 `.sh` 脚本的路径，将 `/{path_to_log}/` 替换为日志文件的路径。
 
 3. 保存并退出编辑器。
 
@@ -117,30 +121,35 @@ date;
 ## 前置条件
 
 1. **安装 Selenium**  
-    使用 pip 安装 Selenium：
-    ```bash
-    pip install selenium
-    ```
+   使用 pip 安装 Selenium：
+
+   ```bash
+   pip install selenium
+   ```
 
 2. **下载 WebDriver**  
-    [下载适合您浏览器的 WebDriver](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/)。确保将 WebDriver 可执行文件添加到系统 PATH。
+   [下载适合您浏览器的 WebDriver](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/)。确保将 WebDriver 可执行文件添加到系统 PATH。
 
 3. **安装所需的 Python 库**  
-    安装工具所需的其他依赖项：
-    ```bash
-    pip install pandas jupyter
-    ```
+   安装工具所需的其他依赖项：
+
+   ```bash
+   pip install pandas jupyter
+   ```
 
 4. **设置 Conda 环境（可选）**  
-    创建并激活 Conda 环境以更好地管理依赖项：
-    ```bash
-    conda create -n paper_status_env python=3.9 -y
-    conda activate paper_status_env
-    ```
-    然后，在环境中安装所需库：
-    ```bash
-    pip install selenium pandas jupyter
-    ```
+   创建并激活 Conda 环境以更好地管理依赖项：
+
+   ```bash
+   conda create -n paper_status_env python=3.9 -y
+   conda activate paper_status_env
+   ```
+
+   然后，在环境中安装所需库：
+
+   ```bash
+   pip install selenium pandas jupyter
+   ```
 
 5. **浏览器兼容性**  
-    确保浏览器版本与 WebDriver 版本匹配，以避免兼容性问题。
+   确保浏览器版本与 WebDriver 版本匹配，以避免兼容性问题。
