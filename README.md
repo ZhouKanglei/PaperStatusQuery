@@ -2,6 +2,13 @@
 
 # Automatically Query Paper Submission Status 
 
+
+This tool addresses the issue of authors frequently checking the submission system for updates on their paper's status, which can be time-consuming and inefficient, especially for journal submissions with unpredictable timelines.
+ 
+The tool utilizes a web scraping program combined with a scheduling feature to automatically monitor the status of submitted papers. It periodically queries the submission system for updates and notifies the author via email about the latest progress. 
+ By automating the status-checking process, this tool saves time, improves efficiency, and allows authors to focus on  more critical research tasks without the risk of missing important updates.
+ 
+
 ## Overview
 
 This document provides instructions for using the **Automatically Query Paper Submission Status** tool, which helps researchers track the status of their paper submissions across various journal systems.
@@ -125,7 +132,7 @@ Ensure that you have write permissions in the directory where the script is exec
     ```
 
 2. **Download WebDriver**  
-    [Download the appropriate WebDriver for your browser](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/). Ensure the WebDriver executable is added to your system's PATH.
+    [Download the appropriate WebDriver for your browser](https://blog.csdn.net/m0_57021623/article/details/132309298). Ensure the WebDriver executable is added to your system's PATH.
 
 3. **Install Required Python Libraries**  
     Install additional dependencies required for the tool:
