@@ -1,4 +1,7 @@
-# Automatically Query Paper Submission Status
+[EN](README.md) | [ZH](README-zh.md)
+
+# Automatically Query Paper Submission Status 
+
 ## Overview
 
 This document provides instructions for using the **Automatically Query Paper Submission Status** tool, which helps researchers track the status of their paper submissions across various journal systems.
